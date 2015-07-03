@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">TweetSample</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="twitter_consumer_key">********</string>
+    <string name="twitter_consumer_secret">********</string>
+    <string name="twitter_oauth">Twitter認証</string>
+    <string name="twitter_callback_url">helpme765://twitter</string>
+</resources>
