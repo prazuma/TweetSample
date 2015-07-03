@@ -6,19 +6,24 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.content.Intent;
 import android.widget.Toast;
+
+import java.util.Random;
+
 import twitter4j.Twitter;
 import twitter4j.TwitterException;
 
 
 public class MainActivity extends ListActivity {
-
+    Random rand = new Random();
+    int n = rand.nextInt(1000);
     private TweetAdapter mAdapter;
     private Twitter mTwitter;
-    private String mInputText = "ﾜｰｲヽ(ﾟ∀ﾟヽ 三 ﾉﾟ∀ﾟ)ﾉﾜｰｲ";
+    private String mInputText = "ﾌﾘﾌﾘ~(ｏ^-^)[" + Integer.toString(n) + "]";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         /*
         if have no accessToken, go TwitterOAuthActivity
          */
